@@ -1,0 +1,17 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'ReduxDemoApp' do
+  use_frameworks!
+  
+  workspace 'ReduxDemoApp.xcworkspace'
+  # Pods for ReduxDemoApp
+  pod "ReSwift"
+
+end
+
+target 'ReduxDemoCore' do
+  project './ReduxDemoCore/ReduxDemoCore/ReduxDemoCore.xcodeproj' 
+  pod "ReSwift"
+
+end
